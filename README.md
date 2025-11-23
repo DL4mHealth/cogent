@@ -1,4 +1,6 @@
 # CoGenT: A Unified Contrastive-Generative Framework for Time Series Classification. 
+![Work in Progress](https://img.shields.io/badge/status-work_in_progress-orange)
+
 
 > Published in IEEE Transactions on AI | [arXiv:2508.09451](https://arxiv.org/pdf/2508.09451)   
 > Authors: Ziyu Liu (ziyu.liu2@student.rmit.edu.au), Azadeh Alavi, Minyi Li, Xiang Zhang.
