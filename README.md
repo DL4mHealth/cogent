@@ -17,3 +17,33 @@ Framework of the proposed CoGenT:
 - Consistent improvements across six datasets: CoGenT outperforms the standard SimCLR and MAE on all evaluated datasets covering different channels, frequencies, and class counts.
 
 - Strong overall performance: Achieves top F1 scores such as 0.9652 on FD and 0.9131 on FordA, with CoGenT delivering substantial gains over contrastive-only and generative-only baselines.
+
+# Installation
+
+```
+# Clone
+git clone https://github.com/DL4mHealth/cogent.git
+cd cogent
+
+# Create a Python environment
+python -m venv .venv
+source .venv/bin/activate    # mac/linux
+# .venv\Scripts\activate     # windows
+
+pip install -r requirements.txt
+```
+`requirements.txt` should include:
+```
+einops==0.8.1
+numpy==1.24.3
+pandas==2.0.3
+PyYAML==6.0.3
+scikit_learn==1.3.0
+scipy==1.10.1
+sktime==0.29.1
+timm==0.6.12
+torch==2.4.1
+torchmetrics==1.4.0.post0
+tqdm==4.66.5
+ucimlrepo==0.0.7
+```
