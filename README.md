@@ -4,6 +4,7 @@
 > Authors: Ziyu Liu (ziyu.liu2@student.rmit.edu.au), Azadeh Alavi, Minyi Li, Xiang Zhang.
 
 # Overview
+
 CoGenT is a unified self-supervised learning framework for time series that brings together the strengths of both contrastive and generative representation learning. Instead of relying on a single paradigm, CoGenT combines representation alignment with masked reconstruction within one architecture, enabling the model to learn features that are simultaneously discriminative and structure-aware. This unified design makes CoGenT broadly effective across diverse time-series datasets and tasks, while remaining simple, lightweight, and easy to integrate into existing pipelines.  
 
 Framework of the proposed CoGenT:  
@@ -32,6 +33,7 @@ source .venv/bin/activate    # mac/linux
 
 pip install -r requirements.txt
 ```
+
 `requirements.txt` should include:
 ```
 einops==0.8.1
@@ -47,3 +49,29 @@ torchmetrics==1.4.0.post0
 tqdm==4.66.5
 ucimlrepo==0.0.7
 ```
+
+# Quick start — reproduce a pretraining + finetune run
+
+Pretrain  
+Finetune
+
+# Citation
+
+If you find this work useful for your research, please consider citing this paper:
+```
+@article{liu2025unified,
+  title={A Unified Contrastive-Generative Framework for Time Series Classification},
+  author={Liu, Ziyu and Alavi, Azadeh and Li, Minyi and Zhang, Xiang},
+  journal={arXiv preprint arXiv:2508.09451},
+  year={2025}
+}
+```
+
+# License
+
+This repository is released under the Apache-2.0 license. Please see the LICENSE file for details.
+
+# Contact
+
+For questions regarding the code, please contact the author Ziyu Liu (ziyu.liu2@student.rmit.edu.au).  
+The paper states the intent to release full code for reproducibility.
