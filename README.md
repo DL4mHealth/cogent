@@ -3,7 +3,7 @@
 
 
 > Published in IEEE Transactions on AI | [arXiv:2508.09451](https://arxiv.org/pdf/2508.09451)   
-> Authors: Ziyu Liu (ziyu.liu2@student.rmit.edu.au), Azadeh Alavi, Minyi Li, Xiang Zhang.
+> Authors: Ziyu Liu (ziyu.liu2@student.rmit.edu.au), Azadeh Alavi (azadeh.alavi@rmit.edu.au), Minyi Li, Xiang Zhang.
 
 # Overview
 
