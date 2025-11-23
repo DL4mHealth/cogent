@@ -10,4 +10,10 @@ Framework of the proposed CoGenT:
 
 ![Framework of the proposed CoGenT.](img/CoGenT_framework.PNG)
 
+# Key Contributions & Results
 
+- Unified contrastive–generative framework: Combines representation alignment and masked reconstruction in one architecture to learn both discriminative and structure-aware time-series features.
+
+- Consistent improvements across six datasets: CoGenT outperforms the standard SimCLR and MAE on all evaluated datasets covering different channels, frequencies, and class counts.
+
+- Strong overall performance: Achieves top F1 scores such as 0.9652 on FD and 0.9131 on FordA, with CoGenT delivering substantial gains over contrastive-only and generative-only baselines.
