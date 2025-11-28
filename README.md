@@ -52,10 +52,78 @@ tqdm==4.66.5
 ucimlrepo==0.0.7
 ```
 
-# Quick start — reproduce a pretraining + finetune run
+# Quick start
 
-Pretrain  
-Finetune
+This example shows how to run both self-supervised pretraining and supervised finetuning on the FordA dataset.  
+The UCR datasets are loaded automatically via:
+```
+from sktime.datasets import load_UCR_UEA_dataset
+```
+
+No manual downloads are required.
+
+### 1. Select the dataset in the UCR config
+
+Open:
+```
+config/UCR_config.yaml
+```
+
+Uncomment the FordA section and comment out the others:
+```yaml
+# FordA
+dataset_: "FordA"
+n_class: 2
+...
+
+## other datasets...
+#dataset_: "ChlorineConcentration"
+#n_class: 3
+#...
+```
+### 2. Pretraining
+
+Set `pretrain: True` in the same config file:
+```yaml
+pretrain: True
+# pretrain: False
+```
+
+Run:
+```bash
+python CoGenT_pretrain.py --config config/UCR_config.yaml
+```
+
+This performs self-supervised pretraining on FordA.
+
+### 3. Finetuning WITH pretraining
+
+To finetune using the pretrained model, keep the same flag:
+```yaml
+pretrain: True
+```
+
+Run:
+```bash
+python CoGenT_finetune.py --config config/UCR_config.yaml
+```
+
+This performs supervised finetuning using the pretrained checkpoint.
+
+### 4. (Optional) Finetuning WITHOUT pretraining
+
+If you want supervised finetuning from scratch, switch the flag:
+```yaml
+pretrain: False
+```
+
+And run:
+```bash
+python CoGenT_finetune.py --config config/UCR_config.yaml
+```
+
+This runs finetuning without loading any pretrained weights.
+
 
 # Citation
 
