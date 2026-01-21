@@ -2,7 +2,7 @@
 ![Work in Progress](https://img.shields.io/badge/status-work_in_progress-orange)
 
 
-> Published in IEEE Transactions on AI [link](https://www.computer.org/csdl/journal/ai/5555/01/11269359/2bXLeWJNtqU) | [arXiv:2508.09451](https://arxiv.org/pdf/2508.09451)   
+> Published in IEEE Transactions on AI [[link]](https://www.computer.org/csdl/journal/ai/5555/01/11269359/2bXLeWJNtqU) | [arXiv:2508.09451](https://arxiv.org/pdf/2508.09451)   
 > Authors: Ziyu Liu (ziyu.liu2@student.rmit.edu.au), Azadeh Alavi (azadeh.alavi@rmit.edu.au), Minyi Li, Xiang Zhang.
 
 # Overview
