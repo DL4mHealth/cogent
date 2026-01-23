@@ -2,7 +2,10 @@ import os
 import torch
 
 
-def save_model(args, model, optimizer):
+def save_model(args, model):
+
+    # Ensure save directory exists
+    os.makedirs(args.model_path, exist_ok=True)
 
     if args.dataset == "UCR":
         out = os.path.join(args.model_path, "Pretrained_{}_{}_{}_{}.tar".format(
